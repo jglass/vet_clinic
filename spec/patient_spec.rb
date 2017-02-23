@@ -1,4 +1,4 @@
-require './patient.rb'
+require File.expand_path('../patient.rb', File.dirname(__FILE__))
 
 describe Patient do
   describe Dog do
