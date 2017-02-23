@@ -1,12 +1,13 @@
-class Patient
-  def talk(animal)
-    if animal.is_a? Cat
-      puts "meow"
-    elsif animal.is_a? Dog
-      puts "woof"
-    end
+class Patient; end
+
+class Cat < Patient
+  def initialize(name)
+    @name = name
   end
 end
 
-class Cat; end
-class Dog; end
+class Dog < Patient
+  def initialize(name)
+    @name = name
+  end
+end
