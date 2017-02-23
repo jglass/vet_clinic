@@ -12,7 +12,7 @@ puts "Account #{account.owner_name} with pet #{account.pet.name} has balance #{a
 account.bill!
 puts "Account #{account.owner_name}  with pet #{account.pet.name} has balance #{account.balance}"
 
-account = Account.new(100, "Jane Lewis", cat)
+account = Account.new(0, "Jane Lewis", dog)
 
 puts "Account #{account.owner_name} with pet #{account.pet.name} has balance #{account.balance}"
 account.bill!
